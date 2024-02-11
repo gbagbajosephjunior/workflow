@@ -1,0 +1,31 @@
+<div class="work-container">
+  <div class="work-first">
+    <div class="work-increment">
+        <button class="increment" (click)="increment()">+</button>
+        <button class="decrement" (click)="decrement()">-</button>
+        <span>{{ percentage }}%</span>
+      </div>      
+
+    <div class="trigar">
+        <div class="work-trigar">
+            <p>Add new workflow triggar</p>
+        </div>
+        <div>
+            <span><i class="fa fa-plus" aria-hidden="true"></i></span>
+        </div>
+       <!-- app.component.html -->
+
+<div class="work-action">
+    <button (click)="showActionForm()">Add first action</button>
+  </div>
+  
+  
+  
+    </div>
+  </div>
+  <div class="work-lorem">
+    <div *ngIf="showComponent">
+        <app-action-form></app-action-form>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(38, 38, 39);
+    color: white;
+    padding: 1rem;
+    align-items: center;
+}
+
+.anchor{
+    text-decoration: none;
+    color: white;
+}
+
+.Update-contain{
+    display: flex;
+    align-items: center;
+}
+
+.update-par{
+margin-right: 1rem;
+}
+
+button{
+    padding: .5rem .7rem;
+    border-radius: .5rem;
+    outline: none;
+    border: none;
+    background-color: white;
+}

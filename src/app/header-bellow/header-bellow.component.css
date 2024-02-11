@@ -1,0 +1,38 @@
+.header-bellow {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: rgb(163, 165, 165);
+  align-items: center;
+}
+
+.mid-container {
+  display: flex;
+}
+.header-bellow .anchor {
+  text-decoration: none;
+  color: black;
+}
+
+.mid-container .anchor {
+  text-decoration: none;
+  color: black;
+}
+
+.container:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.end-container {
+  display: flex;
+}
+
+.end:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.mid-container .container.active .anchor {
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid black
+}
+

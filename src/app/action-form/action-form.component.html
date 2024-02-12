@@ -1,33 +1,153 @@
-<div class="container">
+<div class="container" *ngIf="!isContainerHidden">
+ 
+  <div class="diff">
+   <div class="first">
     <p>Actions</p>
     <p>pick an action for this step</p>
-  <div class="form-container">
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" />
-    </form>
-  </div>
 
-  <div class="container">
-    <div class="paragraph-container">
-      <p>Good days</p>
+   </div>
+    <div class="remove">
+      <button class="butt" (click)="hideContainer()">x</button>
     </div>
   </div>
 
-  <div> <ul>
-    <li><a routerLink="/card">Action</a></li>
-  </ul>love</div>
-  <div><i class="fa fa-slack" aria-hidden="true"></i>love</div>
-  <div><i class="fa fa-comment" aria-hidden="true"></i>love</div>
-  <div>love</div>
-  <div>love</div>
-  <div>love</div>
-  <div>love</div>
-  <div>love</div>
-  <div>love</div>
-  <div>love</div>
-  <div>love</div>
-  <div>love</div>
-  <div>love</div>
-  <div>love</div>
+  <div class="content">
+    <form>
+      <input type="text" id="name" name="name" placeholder="Search Action" />
+    </form>
+  </div>
+
+  <div class="content">
+    <p>LC - Premium Action</p>
+  </div>
+
+  <div class="content">
+    <div class="google">
+      <div class="go">
+        <p>go</p>
+        <p class="sheets">Google Sheets</p>
+      </div>
+      <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div class="content">
+    <div class="google">
+      <div class="go">
+        <p>go</p>
+        <p class="sheets">Stack</p>
+      </div>
+      <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div class="content">
+    <div class="google">
+      <div class="go">
+        <p>go</p>
+        <p class="sheets">Custom Webhook</p>
+      </div>
+      <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div class="content">
+    <div class="google">
+      <div class="go">
+        <p>go</p>
+        <p class="sheets">Date/Time Formatter</p>
+      </div>
+      <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div class="content">
+    <div class="google">
+      <div class="go">
+        <p>go</p>
+        <p class="sheets">Number formatter</p>
+      </div>
+      <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div class="content">
+    <p>Workflow Ai</p>
+  </div>
+  <div class="content">
+    <div class="google">
+      <div class="go">
+        <p>go</p>
+        <p class="sheets">ChatGTP</p>
+      </div>
+      <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div class="content">
+    <p>External Communication</p>
+  </div>
+  <div class="content">
+    <div class="google">
+      <div class="go">
+        <p>go</p>
+        <a class="sheets" [routerLink]="['/card']">Send Email</a>
+
+      </div>
+      <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div class="content">
+    <div class="google">
+      <div class="go">
+        <p>go</p>
+        <p class="sheets">Send Sms</p>
+      </div>
+      <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div class="content">
+    <div class="google">
+      <div class="go">
+        <p>go</p>
+        <p class="sheets">Call</p>
+      </div>
+      <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div class="content">
+    <div class="google">
+      <div class="go">
+        <p>go</p>
+        <p class="sheets">Voicemail</p>
+      </div>
+      <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div class="content">
+    <div class="google">
+      <div class="go">
+        <p>go</p>
+        <p class="sheets">Messenger</p>
+      </div>
+      <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div class="content">
+    <div class="google">
+      <div class="go">
+        <p>go</p>
+        <p class="sheets">Instagram DM</p>
+      </div>
+      <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div class="content">
+    <div class="google">
+      <div class="go">
+        <p>go</p>
+        <p class="sheets">Manual SMS</p>
+      </div>
+      <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+    </div>
+  </div>
+
+  <!-- 
+  <div *ngIf="showComponent">
+    <app-card-form></app-card-form>
+  </div> -->
 </div>

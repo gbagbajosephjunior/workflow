@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    /* border: 1px solid red; */
+    background-color: gold;
+}
+
+.nothing{
+    width: 70%;
+}
+
+.something{
+    width: 30%;
+}

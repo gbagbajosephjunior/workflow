@@ -1,0 +1,46 @@
+form {
+  /* max-width: 500px; */
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  /* border: 1px solid red; */
+  /* background-color: gold; */
+  width: 100%;
+}
+
+.nothing {
+  width: 70%;
+}
+
+.something {
+  width: 30%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}

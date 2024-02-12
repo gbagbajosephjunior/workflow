@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  background-color: rgb(163, 165, 165);
+  background-color: rgb(230, 230, 230);
   align-items: center;
 }
 
@@ -12,6 +12,17 @@
 .header-bellow .anchor {
   text-decoration: none;
   color: black;
+}
+.end-container .anchor {
+  cursor: pointer;
+}
+
+.header-bellow .anchor,
+.mid-container .anchor,
+.end-container .anchor {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 }
 
 .mid-container .anchor {

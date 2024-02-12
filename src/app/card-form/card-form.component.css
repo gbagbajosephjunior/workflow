@@ -1,0 +1,7 @@
+.card{
+    /* width: 30%; */
+    min-height: 100vh;
+    border: 1px solid red;
+    position: relative;
+    z-index: 9999; 
+}

@@ -28,3 +28,40 @@ button{
     border: none;
     background-color: white;
 }
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 480px) {
+    .header {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .Update-contain {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .update-par {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 0.5rem; /* Add bottom margin */
+    }
+
+    button {
+        margin-top: 0.5rem; /* Add top margin */
+    }
+}
+
+/* Adjustments for screens with width 768px */
+@media only screen and (min-width: 768px) {
+    .header {
+        padding: 1rem 2rem; /* Increase padding */
+    }
+
+    .Update-contain {
+        margin-top: 0; /* Remove top margin */
+    }
+
+    button {
+        margin-top: 0; /* Remove top margin */
+    }
+}

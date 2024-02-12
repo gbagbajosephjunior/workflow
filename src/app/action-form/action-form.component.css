@@ -65,3 +65,119 @@ input{
     padding: 2px;
     margin-top: 1rem;
 }
+
+
+.cont {
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+
+}
+
+
+  form {
+    /* max-width: 500px; */
+    margin: 0 auto;
+}
+
+.something {
+    width: 100%;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    width: 100%; /* This rule ensures that inputs, selects, and textareas have a width of 100% */
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+
+}
+
+.sese{
+    margin: 1rem;
+    display: flex;
+}
+
+.red{
+    margin-right: 1rem;
+    background-color: rgb(235, 227, 227);
+}
+.blue{
+    background-color: rgb(221, 217, 217);
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.different{
+    background-color: rgb(13, 13, 36);
+    color: white;
+    align-items: start;
+    padding: 1rem;
+}
+/* For devices up to 320px width */
+@media only screen and (max-width: 320px) {
+    .content {
+        padding: .2rem;
+        margin: .2rem;
+    }
+    .google {
+        flex-direction: column;
+    }
+    .sheets {
+        margin-top: .5rem;
+    }
+}
+
+/* For devices up to 481px width */
+@media only screen and (max-width: 481px) {
+    .content {
+        padding: .3rem;
+        margin: .3rem;
+    }
+    .butt {
+        margin-left: 3rem;
+    }
+}
+
+/* For devices up to 768px width */
+@media only screen and (max-width: 768px) {
+    .diff, .different {
+        padding: .5rem;
+    }
+    .butt {
+        margin-left: 4rem;
+    }
+}
+
+/* For devices up to 1024px width */
+@media only screen and (max-width: 1024px) {
+    .butt {
+        margin-left: 5rem;
+    }
+}
+
+/* For devices up to 1200px width */
+@media only screen and (max-width: 1200px) {
+    .butt {
+        margin-left: 6rem;
+    }
+}

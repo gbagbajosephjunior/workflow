@@ -3,19 +3,10 @@ form {
   margin: 0 auto;
 }
 
-.container {
-  display: flex;
-  /* border: 1px solid red; */
-  /* background-color: gold; */
-  width: 100%;
-}
-
-.nothing {
-  width: 70%;
-}
-
 .something {
-  width: 30%;
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem;
 }
 
 label {
@@ -26,10 +17,11 @@ label {
 input,
 select,
 textarea {
-  width: 100%;
+  width: 100%; /* This rule ensures that inputs, selects, and textareas have a width of 100% */
   padding: 8px;
   margin-bottom: 10px;
   box-sizing: border-box;
+
 }
 
 button {
@@ -43,4 +35,11 @@ button {
 
 button:hover {
   background-color: #45a049;
+}
+
+.different{
+  background-color: rgb(13, 13, 36);
+  color: white;
+  align-items: start;
+  padding: 1rem;
 }

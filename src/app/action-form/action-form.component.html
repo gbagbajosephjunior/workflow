@@ -24,7 +24,7 @@
   <div class="content">
     <div class="google">
       <div class="go">
-        <p>go</p>
+        <!-- <p>go</p> -->
         <p class="sheets">Google Sheets</p>
       </div>
       <i class="fa fa-graduation-cap" aria-hidden="true"></i>
@@ -33,7 +33,7 @@
   <div class="content">
     <div class="google">
       <div class="go">
-        <p>go</p>
+        <!-- <p>go</p> -->
         <p class="sheets">Stack</p>
       </div>
       <i class="fa fa-graduation-cap" aria-hidden="true"></i>
@@ -42,7 +42,7 @@
   <div class="content">
     <div class="google">
       <div class="go">
-        <p>go</p>
+        <!-- <p>go</p> -->
         <p class="sheets">Custom Webhook</p>
       </div>
       <i class="fa fa-graduation-cap" aria-hidden="true"></i>
@@ -51,7 +51,7 @@
   <div class="content">
     <div class="google">
       <div class="go">
-        <p>go</p>
+        <!-- <p>go</p> -->
         <p class="sheets">Date/Time Formatter</p>
       </div>
       <i class="fa fa-graduation-cap" aria-hidden="true"></i>
@@ -60,7 +60,7 @@
   <div class="content">
     <div class="google">
       <div class="go">
-        <p>go</p>
+        <!-- <p>go</p> -->
         <p class="sheets">Number formatter</p>
       </div>
       <i class="fa fa-graduation-cap" aria-hidden="true"></i>
@@ -72,7 +72,7 @@
   <div class="content">
     <div class="google">
       <div class="go">
-        <p>go</p>
+        <!-- <p>go</p> -->
         <p class="sheets">ChatGTP</p>
       </div>
       <i class="fa fa-graduation-cap" aria-hidden="true"></i>
@@ -84,9 +84,8 @@
   <div class="content">
     <div class="google">
       <div class="go">
-        <p>go</p>
-        <a class="sheets" [routerLink]="['/card']">Send Email</a>
-
+        <!-- <p>go</p> -->
+        <a class="sheets" (click)="showFormOnClick()">Send Email</a>
       </div>
       <i class="fa fa-graduation-cap" aria-hidden="true"></i>
     </div>
@@ -94,7 +93,7 @@
   <div class="content">
     <div class="google">
       <div class="go">
-        <p>go</p>
+        <!-- <p>go</p> -->
         <p class="sheets">Send Sms</p>
       </div>
       <i class="fa fa-graduation-cap" aria-hidden="true"></i>
@@ -103,7 +102,7 @@
   <div class="content">
     <div class="google">
       <div class="go">
-        <p>go</p>
+        <!-- <p>go</p> -->
         <p class="sheets">Call</p>
       </div>
       <i class="fa fa-graduation-cap" aria-hidden="true"></i>
@@ -112,7 +111,7 @@
   <div class="content">
     <div class="google">
       <div class="go">
-        <p>go</p>
+        <!-- <p>go</p> -->
         <p class="sheets">Voicemail</p>
       </div>
       <i class="fa fa-graduation-cap" aria-hidden="true"></i>
@@ -121,7 +120,7 @@
   <div class="content">
     <div class="google">
       <div class="go">
-        <p>go</p>
+        <!-- <p>go</p> -->
         <p class="sheets">Messenger</p>
       </div>
       <i class="fa fa-graduation-cap" aria-hidden="true"></i>
@@ -130,7 +129,7 @@
   <div class="content">
     <div class="google">
       <div class="go">
-        <p>go</p>
+        <!-- <p>go</p> -->
         <p class="sheets">Instagram DM</p>
       </div>
       <i class="fa fa-graduation-cap" aria-hidden="true"></i>
@@ -139,7 +138,7 @@
   <div class="content">
     <div class="google">
       <div class="go">
-        <p>go</p>
+        <!-- <p>go</p> -->
         <p class="sheets">Manual SMS</p>
       </div>
       <i class="fa fa-graduation-cap" aria-hidden="true"></i>
@@ -150,4 +149,52 @@
   <div *ngIf="showComponent">
     <app-card-form></app-card-form>
   </div> -->
+</div>
+
+<div class="cont" *ngIf="showForm">
+  <div class="different">
+    <div class="first">
+     <p>Email</p>
+     <p>Send an email to this contact</p>
+   </div>
+   </div>
+
+      <div class="sese">
+        <button class="red" (click)="showFormClick()">Edit</button>
+        <button  class="blue" (click)="onStatistics()">Statistics</button>
+      </div>
+ 
+  
+  <div class="something" *ngIf="FormClick">
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="fromEmail">From Email:</label>
+        <input type="email" id="fromEmail" name="fromEmail" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="template">Template:</label>
+        <select id="template" name="template" required>
+            <option value="template1">Template 1</option>
+            <option value="template2">Template 2</option>
+            <option value="template3">Template 3</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div *ngIf="StatClick"> <!-- Corrected property name -->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur expedita sit qui et ex officiis magni magnam enim porro delectus, harum eum excepturi, nesciunt, quos non corporis repudiandae commodi quas.</p>
+  </div>
+
 </div>
